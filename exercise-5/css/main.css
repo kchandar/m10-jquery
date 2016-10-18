@@ -1,0 +1,17 @@
+td {
+    border: 1px solid black; 
+    height: 100px;
+    width: 100px;
+}
+
+#boardContainer {
+    float: left;
+}
+
+#paletteContainer {
+    float: right;
+}
+
+.colorSwatch {
+    border-radius: 15px;
+}
