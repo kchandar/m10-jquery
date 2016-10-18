@@ -34,17 +34,17 @@ $(document).ready(function() {
     // corresponding color. The table data elements should have a
     // class of colorSwatch
     colors.forEach(function(c) {
-        var row = $("<tr>");
+        var trp = $("<tr>");
 
-        var cell = $('<td class="colorSwatch">');
-        row.append(cell);
-        palette.append(row);
-        cell.css("background-color", c);
+        var tdp = $('<td class="colors">');
+        trp.append(tdp);
+        palette.append(trp);
+        tdp.css("background-color", c);
 
         // Assign a click event to the table data element so that when it is
         // clicked, selectedColor will be set to that element's corresponding
         // color.
-        cell.on("click", function() {
+        tdp.on("click", function() {
             selectedColor = c;
         });
     })
